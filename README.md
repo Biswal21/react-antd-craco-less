@@ -47,6 +47,8 @@ import "./App.less";
  "@craco/craco": "^6.1.2",
 ```
 
+**Check ackage.json**
+
 ### Create craco.config.js
 
 - Create **craco.config.js** in **root folder** and paste ⬇️
