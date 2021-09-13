@@ -40,8 +40,8 @@ import "./App.less";
 ### Configure Package Json
 
 - Copy paste **package.json's** craco re build
-  -- copy **script** json object
-  -- add ⬇️ in **dependencies** json object
+- copy **script** json object
+- add ⬇️ in **dependencies** json object
 
 ```js
  "@craco/craco": "^6.1.2",
