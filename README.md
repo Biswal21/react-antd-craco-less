@@ -27,14 +27,14 @@
 - Change **App.css** to **App.less**
   -- Add an import line in **App.less** file ⬇️
 
-```
+```css
 @import "~antd/dist/antd.less";
 ```
 
 - Import **App.less** in **App.js**
 
-```
-import './App.less';
+```js
+import "./App.less";
 ```
 
 - Copy paste **package.json** for nodemon, craco build.
@@ -43,8 +43,8 @@ import './App.less';
 
 - Create **craco.config.js** in **root folder** and paste ⬇️
 
-```
-const CracoLessPlugin = require('craco-less');
+```js
+const CracoLessPlugin = require("craco-less");
 
 module.exports = {
   plugins: [
@@ -53,8 +53,7 @@ module.exports = {
       options: {
         lessLoaderOptions: {
           lessOptions: {
-            modifyVars: { '@primary-color': '#1DA57A',
-        },
+            modifyVars: { "@primary-color": "#1DA57A" },
             javascriptEnabled: true,
           },
         },
