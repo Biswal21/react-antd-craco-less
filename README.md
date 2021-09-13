@@ -37,7 +37,15 @@
 import "./App.less";
 ```
 
-- Copy paste **package.json** for nodemon, craco build.
+### Configure Package Json
+
+- Copy paste **package.json's** craco re build
+  -- copy **script** json object
+  -- add ⬇️ in **dependencies** json object
+
+```js
+ "@craco/craco": "^6.1.2",
+```
 
 ### Create craco.config.js
 
