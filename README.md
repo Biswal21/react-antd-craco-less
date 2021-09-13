@@ -1,4 +1,70 @@
-# Getting Started with Create React App
+# Getting Started with Create React App-AntD-Craco-Less
+
+### Install Nodemon
+
+```
+    npm install nodemon
+```
+
+### Install AntD
+
+```
+    npm install antd
+```
+
+### Install Craco
+
+```
+    npm install craco
+```
+
+### Install Craco-less
+
+```
+    npm install craco-less
+```
+
+- Change **App.css** to **App.less**
+  -- Add an import line in **App.less** file ⬇️
+
+```
+@import "~antd/dist/antd.less";
+```
+
+- Import **App.less** in **App.js**
+
+```
+import './App.less';
+```
+
+- Copy paste **package.json** for nodemon, craco build.
+
+### Create craco.config.js
+
+- Create **craco.config.js** in **root folder** and paste ⬇️
+
+```
+const CracoLessPlugin = require('craco-less');
+
+module.exports = {
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            modifyVars: { '@primary-color': '#1DA57A',
+        },
+            javascriptEnabled: true,
+          },
+        },
+      },
+    },
+  ],
+};
+```
+
+# ⬇️⬇️Then Regular Process ⬇️⬇️
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
